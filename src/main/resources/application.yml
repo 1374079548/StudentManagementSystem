@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.1.7:3306/demo?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: liya123
+
+
+  activiti:
+    #默认为false,activiti在启动的时候会对比数据库中的表中保存的版本，如果不一样会抛出异常
+    # true activiti会对数据库中的表进行更新操作，如果表不存在，则自动创建
+    # create_drop 在activiti启动的时候创建表，关闭时删除表，必须手动关闭
+    # drop-create 在启动的时候先删除表后再创建新的表
+    check-process-definitions: false
+    database-schema-update: true
