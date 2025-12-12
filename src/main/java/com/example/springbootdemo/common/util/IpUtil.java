@@ -1,4 +1,4 @@
-package com.example.sprringbootdemo.common.util;
+package com.example.springbootdemo.common.util;
 
 import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
